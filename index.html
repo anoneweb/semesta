@@ -9,7 +9,9 @@
 </head>
 <body>
 
-    <div class="stars"></div> <div class="container">
+    <div class="stars"></div>
+
+    <div class="container">
         <header>
             <div class="logo">✨ SANDI SEMESTA</div>
             <p class="subtitle">Algoritma Kuno untuk Kehidupan Modern</p>
@@ -27,7 +29,7 @@
             </div>
 
             <button onclick="revealDestiny()" class="btn-main">Buka Tabir</button>
-            <p class="privacy-note">🔒 Data diproses di perangkat Anda, tidak dikirim ke server manapun.</p>
+            <p class="privacy-note">🔒 Data diproses di perangkat Anda, aman.</p>
         </section>
 
         <div id="loading" class="hidden">
@@ -35,7 +37,7 @@
             <p>Menghitung konfigurasi semesta...</p>
         </div>
 
-                <div id="result" class="hidden fade-in">
+        <div id="result" class="hidden fade-in">
             <div class="header-result">
                 <span class="badge">HASIL ANALISIS</span>
                 <h2 id="user-greeting"></h2>
@@ -43,19 +45,19 @@
 
             <div class="main-card">
                 <div class="number-circle" id="path-number">?</div>
-                <h3 id="path-label" style="color: var(--gold); margin-bottom: 5px;"></h3>
+                <h3 id="path-label" style="color: var(--gold); margin: 5px 0;"></h3>
                 <p id="description" class="quote"></p>
             </div>
             
             <div class="grid-insight">
                 <div class="insight-card">
                     <div class="icon">💼</div>
-                    <h4>Potensi Karir</h4>
+                    <h4>Karir & Bakat</h4>
                     <p id="career-text"></p>
                 </div>
                 <div class="insight-card">
                     <div class="icon">💰</div>
-                    <h4>Aliran Keuangan</h4>
+                    <h4>Pola Keuangan</h4>
                     <p id="finance-text"></p>
                 </div>
                 <div class="insight-card">
@@ -74,28 +76,6 @@
                 <div class="icon">🍀</div>
                 <h4>Atribut Keberuntungan</h4>
                 <p id="luck-text" style="font-weight: bold; color: var(--gold);"></p>
-            </div>
-            
-            <button onclick="reset()" class="btn-outline">Baca Orang Lain</button>
-        </div>
-
-            <div class="main-card">
-                <div class="number-circle" id="path-number">?</div>
-                <h3>Life Path Number</h3>
-                <p id="description" class="quote"></p>
-            </div>
-            
-            <div class="grid-insight">
-                <div class="insight-card">
-                    <div class="icon">💼</div>
-                    <h4>Potensi Karir</h4>
-                    <p id="career-text"></p>
-                </div>
-                <div class="insight-card">
-                    <div class="icon">❤️</div>
-                    <h4>Dinamika Cinta</h4>
-                    <p id="love-text"></p>
-                </div>
             </div>
             
             <button onclick="reset()" class="btn-outline">Baca Orang Lain</button>
