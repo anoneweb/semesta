@@ -16,135 +16,98 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow-x: hidden;
 }
 
 .container {
     width: 90%;
-    max-width: 480px;
+    max-width: 500px;
     padding: 20px;
-    z-index: 10;
 }
 
-/* Typography & Logo */
+/* Header & Typography */
 header { text-align: center; margin-bottom: 30px; }
 .logo {
     font-family: 'Playfair Display', serif;
     font-size: 2rem;
     color: var(--gold);
-    letter-spacing: 2px;
-    margin-bottom: 5px;
     text-shadow: 0 0 10px var(--purple-glow);
 }
-.subtitle { color: var(--text-muted); font-size: 0.9rem; margin-top: 0; }
+.subtitle { color: var(--text-muted); font-size: 0.9rem; margin: 0; }
 
-/* Input Styles */
+/* Form */
 .form-group { margin-bottom: 20px; text-align: left; }
-label { display: block; margin-bottom: 8px; font-size: 0.9rem; color: var(--gold); }
+label { display: block; margin-bottom: 8px; color: var(--gold); }
 input {
-    width: 100%;
-    padding: 15px;
-    background: var(--card-bg);
-    border: 1px solid #333;
-    border-radius: 12px;
-    color: white;
-    font-family: inherit;
-    font-size: 1rem;
-    outline: none;
-    transition: 0.3s;
-    box-sizing: border-box;
+    width: 100%; padding: 15px;
+    background: var(--card-bg); border: 1px solid #333;
+    border-radius: 12px; color: white;
+    font-size: 1rem; box-sizing: border-box;
 }
-input:focus { border-color: var(--gold); box-shadow: 0 0 10px rgba(212, 175, 55, 0.2); }
 
-/* Buttons */
+/* Button */
 .btn-main {
-    width: 100%;
-    padding: 15px;
+    width: 100%; padding: 15px;
     background: linear-gradient(45deg, #d4af37, #f6e27a);
-    color: #1a0b2e;
-    font-weight: bold;
-    border: none;
-    border-radius: 50px;
-    font-size: 1rem;
-    cursor: pointer;
-    margin-top: 10px;
+    color: #1a0b2e; font-weight: bold;
+    border: none; border-radius: 50px;
+    font-size: 1rem; cursor: pointer;
     box-shadow: 0 5px 20px rgba(212, 175, 55, 0.3);
 }
 .btn-outline {
-    width: 100%;
-    padding: 15px;
-    background: transparent;
-    border: 1px solid var(--text-muted);
-    color: var(--text-muted);
-    border-radius: 50px;
-    margin-top: 20px;
-    cursor: pointer;
+    width: 100%; padding: 12px; margin-top: 20px;
+    background: transparent; border: 1px solid var(--text-muted);
+    color: var(--text-muted); border-radius: 50px; cursor: pointer;
 }
 
-/* Result Card Styling */
+/* Hasil / Result */
 .hidden { display: none; }
 .fade-in { animation: fadeIn 1s ease; }
 
 .main-card {
-    background: var(--card-bg);
-    padding: 25px;
-    border-radius: 20px;
-    text-align: center;
+    background: var(--card-bg); padding: 20px;
+    border-radius: 20px; text-align: center;
     border: 1px solid rgba(255,255,255,0.1);
-    margin-bottom: 20px;
-    backdrop-filter: blur(10px);
+    margin-bottom: 15px;
 }
 .number-circle {
-    width: 60px; height: 60px;
-    background: var(--gold);
-    color: #000;
+    width: 50px; height: 50px; line-height: 50px;
+    background: var(--gold); color: #000;
     font-family: 'Playfair Display', serif;
-    font-size: 2rem;
-    line-height: 60px;
-    border-radius: 50%;
-    margin: 0 auto 15px;
-    font-weight: bold;
+    font-size: 1.5rem; font-weight: bold;
+    border-radius: 50%; margin: 0 auto 10px;
 }
-.quote { font-style: italic; line-height: 1.6; color: #ddd; }
 
-.grid-insight { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; }
+/* Grid Layout 4 Kotak */
+.grid-insight {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
 .insight-card {
     background: rgba(0,0,0,0.3);
-    padding: 15px;
-    border-radius: 15px;
-    font-size: 0.9rem;
+    padding: 15px; border-radius: 15px;
+    font-size: 0.85rem;
 }
-.insight-card h4 { color: var(--gold); margin: 5px 0; }
+.insight-card h4 { color: var(--gold); margin: 5px 0; font-size: 0.9rem; }
 .icon { font-size: 1.5rem; margin-bottom: 5px; }
-.privacy-note { font-size: 0.7rem; color: #555; text-align: center; margin-top: 20px; }
 
-/* Loading Spinner */
+/* Lucky Charm Card (Kotak Panjang) */
+.lucky-card {
+    background: linear-gradient(45deg, rgba(212, 175, 55, 0.1), rgba(0,0,0,0.3));
+    padding: 15px; border-radius: 15px;
+    border: 1px solid rgba(212, 175, 55, 0.3);
+    margin-top: 10px; text-align: center;
+}
+
+/* Loading */
 .spinner {
-    width: 40px; height: 40px;
+    width: 40px; height: 40px; margin: 0 auto 15px;
     border: 4px solid rgba(255,255,255,0.1);
     border-left-color: var(--gold);
     border-radius: 50%;
-    margin: 0 auto 15px;
     animation: spin 1s linear infinite;
 }
 
 @keyframes spin { 100% { transform: rotate(360deg); } }
 @keyframes fadeIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
-
-/* Tambahan untuk Layout Baru */
-.lucky-card {
-    background: linear-gradient(45deg, rgba(212, 175, 55, 0.1), rgba(0,0,0,0.3));
-    padding: 15px;
-    border-radius: 15px;
-    border: 1px solid rgba(212, 175, 55, 0.3);
-    margin-top: 15px;
-    text-align: center;
-}
-
-/* Responsif untuk HP (2 kolom jadi 1 kolom kalau layar kecil) */
-@media (max-width: 480px) {
-    .grid-insight {
-        grid-template-columns: 1fr; /* Jadi 1 kolom ke bawah */
-    }
-}
-
+@media (max-width: 400px) { .grid-insight { grid-template-columns: 1fr; } }
