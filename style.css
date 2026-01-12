@@ -130,3 +130,21 @@ input:focus { border-color: var(--gold); box-shadow: 0 0 10px rgba(212, 175, 55,
 
 @keyframes spin { 100% { transform: rotate(360deg); } }
 @keyframes fadeIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+
+/* Tambahan untuk Layout Baru */
+.lucky-card {
+    background: linear-gradient(45deg, rgba(212, 175, 55, 0.1), rgba(0,0,0,0.3));
+    padding: 15px;
+    border-radius: 15px;
+    border: 1px solid rgba(212, 175, 55, 0.3);
+    margin-top: 15px;
+    text-align: center;
+}
+
+/* Responsif untuk HP (2 kolom jadi 1 kolom kalau layar kecil) */
+@media (max-width: 480px) {
+    .grid-insight {
+        grid-template-columns: 1fr; /* Jadi 1 kolom ke bawah */
+    }
+}
+
