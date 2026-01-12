@@ -35,11 +35,49 @@
             <p>Menghitung konfigurasi semesta...</p>
         </div>
 
-        <div id="result" class="hidden fade-in">
+                <div id="result" class="hidden fade-in">
             <div class="header-result">
                 <span class="badge">HASIL ANALISIS</span>
                 <h2 id="user-greeting"></h2>
             </div>
+
+            <div class="main-card">
+                <div class="number-circle" id="path-number">?</div>
+                <h3 id="path-label" style="color: var(--gold); margin-bottom: 5px;"></h3>
+                <p id="description" class="quote"></p>
+            </div>
+            
+            <div class="grid-insight">
+                <div class="insight-card">
+                    <div class="icon">💼</div>
+                    <h4>Potensi Karir</h4>
+                    <p id="career-text"></p>
+                </div>
+                <div class="insight-card">
+                    <div class="icon">💰</div>
+                    <h4>Aliran Keuangan</h4>
+                    <p id="finance-text"></p>
+                </div>
+                <div class="insight-card">
+                    <div class="icon">❤️</div>
+                    <h4>Cinta & Relasi</h4>
+                    <p id="love-text"></p>
+                </div>
+                <div class="insight-card">
+                    <div class="icon">⚠️</div>
+                    <h4>Sisi Bayangan</h4>
+                    <p id="challenge-text"></p>
+                </div>
+            </div>
+
+            <div class="lucky-card">
+                <div class="icon">🍀</div>
+                <h4>Atribut Keberuntungan</h4>
+                <p id="luck-text" style="font-weight: bold; color: var(--gold);"></p>
+            </div>
+            
+            <button onclick="reset()" class="btn-outline">Baca Orang Lain</button>
+        </div>
 
             <div class="main-card">
                 <div class="number-circle" id="path-number">?</div>
