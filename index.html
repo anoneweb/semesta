@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sandi Semesta - Baca Pola Hidup</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Quicksand:wght@300;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="stars"></div> <div class="container">
+        <header>
+            <div class="logo">✨ SANDI SEMESTA</div>
+            <p class="subtitle">Algoritma Kuno untuk Kehidupan Modern</p>
+        </header>
+
+        <section id="input-section" class="fade-in">
+            <div class="form-group">
+                <label>Siapa nama panggilan Anda?</label>
+                <input type="text" id="name" placeholder="Tulis nama disini..." autocomplete="off">
+            </div>
+            
+            <div class="form-group">
+                <label>Kapan Anda dilahirkan?</label>
+                <input type="date" id="birthdate">
+            </div>
+
+            <button onclick="revealDestiny()" class="btn-main">Buka Tabir</button>
+            <p class="privacy-note">🔒 Data diproses di perangkat Anda, tidak dikirim ke server manapun.</p>
+        </section>
+
+        <div id="loading" class="hidden">
+            <div class="spinner"></div>
+            <p>Menghitung konfigurasi semesta...</p>
+        </div>
+
+        <div id="result" class="hidden fade-in">
+            <div class="header-result">
+                <span class="badge">HASIL ANALISIS</span>
+                <h2 id="user-greeting"></h2>
+            </div>
+
+            <div class="main-card">
+                <div class="number-circle" id="path-number">?</div>
+                <h3>Life Path Number</h3>
+                <p id="description" class="quote"></p>
+            </div>
+            
+            <div class="grid-insight">
+                <div class="insight-card">
+                    <div class="icon">💼</div>
+                    <h4>Potensi Karir</h4>
+                    <p id="career-text"></p>
+                </div>
+                <div class="insight-card">
+                    <div class="icon">❤️</div>
+                    <h4>Dinamika Cinta</h4>
+                    <p id="love-text"></p>
+                </div>
+            </div>
+            
+            <button onclick="reset()" class="btn-outline">Baca Orang Lain</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
