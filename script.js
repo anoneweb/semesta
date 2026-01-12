@@ -1,146 +1,178 @@
-// DATABASE NARASI (Potongan-potongan paragraf)
-// Kita buat banyak variasi agar hasilnya tidak pasaran.
+/* DATABASE "MASTER CONSULTANT"
+   Menggunakan gaya bahasa profesional, psikologis, dan spiritual mendalam.
+*/
 
 const naskah = {
-    // PARAGRAF 1: Sifat Dasar (Berdasarkan Tanggal Lahir / Life Path)
+    // BAGIAN I: ARKETIPE & PSIKOLOGI DALAM (Berdasarkan Tanggal Lahir / Life Path)
     core: [
-        "Anda memiliki frekuensi energi yang sangat mandiri. Di dalam jiwa Anda, terdapat dorongan kuat untuk merintis jalan sendiri daripada mengikuti jejak orang lain. Semesta membentuk Anda sebagai inisiator, orang yang berani mengambil langkah pertama ketika orang lain ragu.",
-        "Kepekaan emosional adalah kekuatan terbesar sekaligus kelemahan Anda. Anda diciptakan dengan sensor batin yang sangat halus, mampu menangkap nuansa perasaan orang di sekitar Anda tanpa mereka bicara. Anda adalah penyembuh alami bagi lingkungan Anda.",
-        "Kreativitas mengalir deras dalam darah Anda. Anda tidak ditakdirkan untuk hidup dalam rutinitas yang kaku dan membosankan. Jiwa Anda selalu mencari cara untuk mengekspresikan diri, baik melalui kata-kata, seni, maupun ide-ide liar yang sering kali melampaui zaman.",
-        "Keteraturan dan logika adalah fondasi hidup Anda. Anda adalah arsitek kehidupan yang melihat dunia sebagai struktur yang harus dibangun dengan kokoh. Orang lain mungkin melihat Anda kaku, namun sesungguhnya Anda hanya ingin memastikan keamanan bagi semua orang.",
-        "Kebebasan adalah mata uang paling berharga bagi Anda. Jiwa Anda seperti angin yang tidak bisa ditangkap. Anda mudah beradaptasi, cepat belajar, namun juga cepat bosan. Tantangan terbesar Anda adalah menemukan satu hal untuk ditekuni hingga akhir.",
-        "Tanggung jawab adalah nama tengah Anda. Semesta menitipkan energi 'pengasuh' dalam diri Anda. Anda sering kali merasa wajib membereskan masalah orang lain, dan kebahagiaan Anda sering kali bergantung pada keharmonisan lingkungan terdekat.",
-        "Anda adalah pencari kebenaran sejati. Pikiran Anda analitis, filosofis, dan sering kali skeptis terhadap hal-hal yang terlihat di permukaan. Anda membutuhkan banyak waktu sendirian (solitude) untuk memproses kedalaman pikiran Anda yang jarang dipahami orang lain.",
-        "Ambisi materi dan kekuasaan mengelilingi aura Anda. Anda memiliki potensi eksekutif yang kuat. Bagi Anda, hasil nyata adalah segalanya. Namun, ujian hidup Anda sering kali berkisar pada keseimbangan antara mengejar materi dan kepuasan batin.",
-        "Anda adalah jiwa tua (Old Soul) yang humanis. Kepedulian Anda meluas melampaui diri sendiri dan keluarga, mencakup kemanusiaan. Anda sering merasa asing di dunia yang penuh kompetisi ini karena motivasi Anda adalah memberi, bukan mengambil."
+        // Index 0 (Hasil 1): The Initiator
+        `<strong>Analisis Inti: The Primal Force (Sang Perintis)</strong><br><br>
+        Secara fundamental, struktur psikis Anda didesain untuk otonomi mutlak. Anda memiliki apa yang disebut dalam psikologi sebagai <em>High Internal Locus of Control</em>—keyakinan bahwa Andalah pemegang kemudi takdir, bukan lingkungan. Vibrasi angka 1 adalah energi "maskulin" murni (tidak peduli gender Anda), yang berorientasi pada penetrasi ide, inisiatif, dan dominasi.<br><br>
+        Di kedalaman batin, ketakutan terbesar Anda bukanlah kegagalan, melainkan ketergantungan. Anda lebih memilih gagal dengan cara Anda sendiri daripada sukses tapi harus tunduk pada perintah orang lain. Ini menjadikan Anda pemimpin alami, namun juga sering membuat Anda terisolasi secara emosional. Tantangan spiritual Anda di kehidupan ini adalah belajar tentang <em>Interdependensi</em>—bahwa meminta bantuan tidak menurunkan derajat Anda.`,
+        
+        // Index 1 (Hasil 2): The Diplomat
+        `<strong>Analisis Inti: The Intuitive Mediator (Sang Penyeimbang)</strong><br><br>
+        Anda beroperasi dengan frekuensi sensitivitas tinggi. Dalam terminologi metafisika, Anda adalah "Reseptor"—penyerap energi lingkungan. Kekuatan super Anda adalah empati kognitif; Anda bisa memahami posisi lawan bicara bahkan sebelum mereka mengucapkannya. Anda adalah lem perekat yang menyatukan sistem yang retak.<br><br>
+        Namun, ada harga mahal yang harus dibayar: kelelahan batin. Karena terlalu sering menyerap emosi orang lain, Anda sering kehilangan batas (boundary) antara perasaan diri sendiri dan orang lain. Masalah terbesar Anda seringkali adalah <em>Passive Aggressiveness</em>—memendam kemarahan demi menjaga kedamaian semu, yang akhirnya meledak menjadi penyakit fisik atau depresi. Misi jiwa Anda adalah berani berkata "Tidak" tanpa rasa bersalah.`,
+
+        // Index 2 (Hasil 3): The Catalyst
+        `<strong>Analisis Inti: The Creative Spark (Sang Katalisator)</strong><br><br>
+        Cetak biru jiwa Anda adalah ekspresi. Anda adalah saluran (channel) bagi ide-ide semesta yang ingin dimanifestasikan ke bumi. Energi Anda menyala-nyala, karismatik, dan memiliki daya magnet sosial yang kuat. Orang tertarik pada Anda bukan hanya karena apa yang Anda katakan, tapi karena bagaimana perasaan mereka saat berada di dekat Anda.<br><br>
+        Sisi bayangan (Shadow Self) Anda adalah sindrom "Peter Pan"—ketakutan untuk menjadi dewasa dan menghadapi realita yang membosankan. Anda memiliki ribuan ide brilian yang mati prematur karena kurangnya disiplin eksekusi (Grit). Secara psikologis, Anda sering menggunakan humor dan keceriaan sebagai mekanisme pertahanan untuk menghindari luka emosional yang dalam.`,
+
+        // Index 3 (Hasil 4): The Architect
+        `<strong>Analisis Inti: The Master Builder (Sang Arsitek)</strong><br><br>
+        Anda adalah representasi dari elemen Tanah: stabil, kokoh, dan pragmatis. Di dunia yang penuh kekacauan ini, Anda adalah pilar ketertiban. Otak Anda bekerja secara sistematis, memecah masalah besar menjadi langkah-langkah logis. Anda tidak berjudi dengan nasib; Anda membangunnya bata demi bata.<br><br>
+        Kelemahan tersembunyi Anda adalah kekakuan kognitif (Cognitive Rigidity). Anda sulit beradaptasi jika rencana berubah mendadak. Rasa aman adalah kebutuhan vital bagi Anda, yang seringkali membuat Anda terjebak dalam zona nyaman yang membatasi potensi. Tantangan evolusi jiwa Anda adalah belajar "menari di tengah badai"—menerima bahwa ketidakpastian adalah bagian dari kehidupan.`,
+
+        // Index 4 (Hasil 5): The Maverick
+        `<strong>Analisis Inti: The Agent of Change (Sang Petualang)</strong><br><br>
+        Kebebasan bagi Anda bukan sekadar kata sifat, melainkan kebutuhan biologis. Saraf Anda terstimulasi oleh kebaruan (novelty). Anda memiliki kecerdasan adaptif yang luar biasa; lemparkan Anda ke lingkungan asing mana pun, dan Anda akan bertahan hidup bahkan memimpin.<br><br>
+        Namun, pola destruktif Anda adalah eskapisme (pelarian). Ketika masalah menjadi pelik, insting pertama Anda adalah lari—pindah kerja, putus hubungan, atau mencari distraksi impulsif. Secara spiritual, Anda sedang belajar tentang makna Komitmen. Ingatlah, Anda tidak bisa membangun istana jika terus berpindah lahan setiap kali tanahnya terasa keras.`,
+
+        // Index 5 (Hasil 6): The Guardian
+        `<strong>Analisis Inti: The Nurturer (Sang Pelindung)</strong><br><br>
+        Pusat energi Anda berada di Cakra Jantung. Anda memiliki dorongan naluriah untuk memperbaiki, merawat, dan melindungi. Dalam dinamika kelompok, Anda otomatis mengambil peran "Orang Tua", memastikan semua orang kenyang dan aman. Rasa tanggung jawab Anda adalah beban sekaligus anugerah.<br><br>
+        Jebakan psikologis Anda adalah <em>Martyr Complex</em>—merasa harus berkorban demi orang lain hingga mengabaikan diri sendiri, lalu diam-diam mengharapkan apresiasi. Jika apresiasi itu tidak datang, Anda menjadi risau dan kecewa. Pelajaran hidup Anda adalah tentang <em>Self-Love</em>: Anda tidak bisa menuangkan air dari cangkir yang kosong.`,
+
+        // Index 6 (Hasil 7): The Sage
+        `<strong>Analisis Inti: The Truth Seeker (Sang Pertapa)</strong><br><br>
+        Anda memiliki kualitas pikiran yang tajam, analitis, dan skeptis. Anda tidak diciptakan untuk menerima dogma atau aturan sosial begitu saja. Anda selalu bertanya "Mengapa?" dan "Apa hakikatnya?". Anda sering merasa terasing di tengah keramaian karena frekuensi pemikiran Anda berbeda dengan percakapan basa-basi kebanyakan orang.<br><br>
+        Tantangan terbesar Anda adalah isolasi intelektual. Anda bisa menjadi terlalu kritis, sinis, dan dingin, memandang orang lain yang "kurang pintar" dengan arogansi halus. Misi jiwa Anda adalah menghubungkan kecerdasan otak dengan kehangatan hati. Kebenaran tanpa kasih sayang adalah kekejaman.`,
+
+        // Index 7 (Hasil 8): The Sovereign
+        `<strong>Analisis Inti: The Executive (Sang Penguasa)</strong><br><br>
+        Anda memiliki pola energi yang selaras dengan hukum material dunia: sebab-akibat, karma, dan kekuasaan. Ambisi bukan kata kotor bagi Anda, itu adalah bahan bakar. Anda memiliki ketahanan mental (resilience) di atas rata-rata untuk menghadapi tekanan tinggi demi hasil besar.<br><br>
+        Bahaya laten bagi Anda adalah materialisme dan identifikasi diri yang hanya melekat pada status. Anda sering menilai harga diri Anda berdasarkan apa yang Anda miliki atau capai, bukan siapa Anda sebenarnya. Pelajaran karmic Anda adalah menggunakan kekuasaan untuk memberdayakan orang lain, bukan untuk menindas atau memuaskan ego semata.`,
+
+        // Index 8 (Hasil 9): The Humanitarian
+        `<strong>Analisis Inti: The Universal Soul (Sang Humanis)</strong><br><br>
+        Anda membawa kebijaksanaan dari semua angka sebelumnya. Jiwa Anda tua, idealis, dan seringkali dramatis. Anda memiliki kapasitas kasih sayang yang luas, tidak hanya untuk keluarga, tapi untuk orang asing dan dunia. Anda sering merasa memikul beban dunia di pundak Anda.<br><br>
+        Tantangan Anda adalah melepaskan (Letting Go). Angka 9 adalah angka penyelesaian. Hidup sering memaksa Anda kehilangan hal-hal yang Anda cintai agar Anda belajar bahwa tidak ada yang abadi. Seringkali Anda sulit *move on* dari masa lalu. Tugas Anda adalah menjadi inspirasi, mengajarkan cinta tanpa syarat (Unconditional Love) kepada dunia.`
     ],
 
-    // PARAGRAF 2: Bawah Sadar & Emosi (Berdasarkan Jam Lahir)
-    // Pagi (0-8), Siang (9-16), Malam (17-24)
-    subconscious: [
-        "Karena Anda lahir di bawah naungan energi fajar/pagi, bawah sadar Anda dipenuhi dengan harapan namun juga kecemasan akan masa depan. Anda sering kali merasa harus 'siap sedia', membuat Anda sulit untuk benar-benar rileks. Ada dorongan tersembunyi untuk membuktikan diri kepada dunia.",
-        "Terlahir saat matahari tinggi (siang/sore), energi Anda bersifat ekspresif namun reaktif. Di permukaan Anda tampak tenang, namun di kedalaman batin, ada api yang mudah tersulut jika prinsip Anda dilanggar. Anda cenderung menyembunyikan luka batin di balik kesibukan aktivitas.",
-        "Lahir di bawah naungan malam memberi Anda akses ke intuisi yang tajam namun misterius. Anda sering kali menyerap emosi negatif orang lain tanpa sadar. Sisi bayangan Anda adalah kecenderungan untuk overthinking dan menciptakan skenario buruk yang belum tentu terjadi."
+    // BAGIAN II: DINAMIKA BAWAH SADAR (Berdasarkan Jam Lahir)
+    timePath: [
+        // Pagi (00:00 - 08:00)
+        `<strong>Dinamika Bawah Sadar: The Morning Star</strong><br>
+        Lahir di fase transisi gelap ke terang membuat alam bawah sadar Anda selalu waspada. Anda memiliki kecemasan eksistensial tersembunyi: takut tertinggal atau tidak siap. Ini membuat Anda menjadi perencana yang hebat, tetapi sulit menikmati momen "sekarang". Otak Anda selalu hidup di masa depan.`,
+        
+        // Siang (08:01 - 16:00)
+        `<strong>Dinamika Bawah Sadar: The Zenith Sun</strong><br>
+        Lahir saat matahari aktif membuat energi Anda bersifat <em>Outward Projection</em> (memancar keluar). Anda memproses emosi melalui tindakan/aksi, bukan diam. Saat stres, Anda cenderung menjadi sibuk (workaholic) atau marah meledak-ledak, alih-alih merenung. Anda menyembunyikan kerapuhan di balik topeng "Saya kuat, saya bisa atasi ini".`,
+        
+        // Malam (16:01 - 23:59)
+        `<strong>Dinamika Bawah Sadar: The Midnight Moon</strong><br>
+        Lahir di naungan malam memberikan akses kuat ke dunia intuisi dan mimpi. Anda menyerap atmosfer ruangan tanpa sadar. Seringkali mood Anda berubah drastis tanpa alasan logis—itu karena Anda menyerap "sampah emosi" lingkungan. Kebutuhan terbesar Anda adalah privasi dan kesunyian untuk me-recharge baterai jiwa.`
     ],
 
-    // PARAGRAF 3: Potensi & Karir (Gabungan Nama + Golongan Darah)
-    career: [
-        "Dalam aspek karir dan pencapaian, pola energi Anda menunjukkan kecocokan tinggi di bidang yang membutuhkan diplomasi dan strategi. Anda bukan tipe pekerja keras otot, melainkan pemikir taktis. Uang akan datang bukan dari seberapa keras Anda berkeringat, tapi seberapa pintar Anda membangun koneksi.",
-        "Garis nasib Anda mengarah pada spesialisasi. Jangan menjadi generalis yang tahu sedikit tentang banyak hal. Pilihlah satu bidang unik, tekuni hingga ke akar-akarnya, dan di sanalah kelimpahan materi menunggu Anda. Dunia profesional Anda membutuhkan keahlian teknis yang mendalam.",
-        "Anda memiliki 'Tangan Midas' dalam hal komunikasi dan persuasi. Bidang yang melibatkan negosiasi, penjualan, atau public speaking adalah ladang emas Anda. Namun hati-hati, inkonsistensi adalah musuh utama yang bisa menghancurkan karir yang sudah dibangun bertahun-tahun.",
-        "Peta karir Anda unik: Anda lebih cocok bekerja dalam sistem yang sudah mapan atau institusi besar daripada merintis dari nol sendirian. Struktur memberi Anda rasa aman untuk berkembang. Rezeki Anda cenderung stabil dan meningkat perlahan seiring usia.",
-        "Ada potensi wirausaha yang kuat, namun bercampur dengan risiko tinggi. Insting bisnis Anda tajam, tapi sering kali terburu-buru. Jika Anda bisa bermitra dengan seseorang yang detail dan hati-hati, potensi kesuksesan finansial Anda tidak terbatas."
+    // BAGIAN III: STRATEGI KARIR & KEUANGAN (Hash Nama)
+    strategy: [
+        `<strong>Peta Strategi: The Specialist Route</strong><br>
+        Analisis nama Anda menunjukkan bahwa kekayaan Anda tidak datang dari "kerja keras buta", melainkan dari <strong>Keahlian Spesifik</strong>. Jangan jadi generalis. Pasar akan membayar mahal untuk kedalaman ilmu Anda, bukan luasnya wawasan Anda. <br><em>Saran Taktis:</em> Pilih satu niche sempit, jadilah top 1% di sana.`,
+        
+        `<strong>Peta Strategi: The Connector Route</strong><br>
+        Aset terbesar Anda adalah <em>Social Capital</em> (Modal Sosial). Uang dan peluang selalu datang melalui "siapa yang Anda kenal". Karir terbaik Anda melibatkan negosiasi, perantara, atau komunikasi. <br><em>Saran Taktis:</em> Jangan makan siang sendirian. Perluas jaringan pertemanan di lingkaran yang lebih tinggi.`,
+        
+        `<strong>Peta Strategi: The Entrepreneurial Route</strong><br>
+        Ada elemen risiko tinggi dalam garis tangan Anda. Anda sulit berkembang di struktur birokrasi kaku. Anda butuh kepemilikan (ownership). Jika belum bisa bisnis sendiri, bekerjalah dengan sistem komisi atau bagi hasil. <br><em>Saran Taktis:</em> Pelajari manajemen risiko keuangan. Keberanian Anda perlu rem logika.`,
+        
+        `<strong>Peta Strategi: The Institutional Route</strong><br>
+        Energi nama Anda selaras dengan korporasi besar atau pemerintahan. Anda akan bersinar jika menaiki tangga karir yang jelas strukturnya. Kestabilan adalah kunci produktivitas Anda. <br><em>Saran Taktis:</em> Fokus pada sertifikasi dan gelar formal. Kredibilitas di atas kertas sangat membantu karir Anda.`,
+        
+        `<strong>Peta Strategi: The Creative/Freelance Route</strong><br>
+        Pola rezeki Anda fluktuatif (gelombang). Anda bisa mendapat uang banyak dalam waktu singkat, lalu sepi. Ini normal untuk pola energi Anda. <br><em>Saran Taktis:</em> Wajib punya Dana Darurat 6 bulan. Jangan terikat cicilan jangka panjang yang mencekik.`
     ],
 
-    // PARAGRAF 4: Pesan Semesta / Saran (Randomized salt)
-    advice: [
-        "Pesan untuk fase hidup Anda saat ini: Berhentilah berlari. Apa yang Anda cari sesungguhnya sudah ada di dalam diri, hanya tertutup oleh kebisingan ambisi Anda sendiri. Cobalah untuk diam sejenak dan dengarkan intuisi pertama yang muncul.",
-        "Semesta mengingatkan: Jangan takut melepaskan apa yang memang sudah tidak tumbuh lagi. Baik itu hubungan, pekerjaan, atau pola pikir lama. Sesuatu yang lebih baik sedang menunggu antrian untuk masuk, tapi tangan Anda masih terlalu penuh memegang masa lalu.",
-        "Kunci keberuntungan Anda tahun ini terletak pada 'Memberi'. Ada sumbatan energi pada aliran rezeki Anda yang hanya bisa dibuka dengan keikhlasan membantu orang lain tanpa mengharap kembali. Hoki Anda tersembunyi di senyum orang yang Anda bantu.",
-        "Waspadalah terhadap 'Vampir Energi' di lingkungan dekat Anda. Ada seseorang yang secara halus menguras kepercayaan diri Anda. Saatnya membuat batasan tegas. Prioritaskan kesehatan mental Anda di atas kesopanan basa-basi.",
-        "Fokuslah pada penyelesaian. Anda punya banyak ide hebat, tapi sedikit yang tuntas. Satu proyek yang selesai jauh lebih berharga daripada sepuluh ide brilian yang hanya ada di kepala. Disiplin adalah jembatan antara impian dan kenyataan Anda."
+    // BAGIAN IV: FINAL VERDICT (Pesan Penutup)
+    closing: [
+        "Ingatlah, bintang-bintang hanya memberikan peta, Andalah nakhodanya. Tidak ada takdir yang dipahat di batu. Kesadaran adalah kunci untuk mengubah nasib.",
+        "Semesta tidak sedang menghukum Anda, Semesta sedang mendidik Anda. Apa yang terasa berat saat ini adalah latihan beban untuk otot mental Anda di masa depan.",
+        "Berhentilah mencari validasi dari luar. Kompas Anda ada di dalam dada. Heningkan pikiran, dan jawaban itu akan muncul dengan sendirinya.",
+        "Waktu terbaik untuk menanam pohon adalah 20 tahun lalu, waktu terbaik kedua adalah sekarang. Mulailah langkah kecil hari ini."
     ]
 };
 
 function revealDestiny() {
-    // 1. Ambil Data
     const name = document.getElementById('name').value;
     const dateInput = document.getElementById('birthdate').value;
     const timeInput = document.getElementById('birthtime').value;
-    const bloodType = document.getElementById('bloodtype').value;
 
-    // Validasi
     if (!name || !dateInput || !timeInput) {
-        alert("Mohon lengkapi Nama, Tanggal Lahir, dan Jam Lahir untuk akurasi analisis.");
+        alert("Mohon lengkapi seluruh data untuk analisis yang akurat.");
         return;
     }
 
-    // Efek Loading
+    // UX: Tampilkan Loading yang meyakinkan
     document.getElementById('input-section').classList.add('hidden');
     document.getElementById('loading').classList.remove('hidden');
     
-    // Ubah teks loading biar seru
-    const loadingTexts = [
-        "Membaca konfigurasi bintang...", 
-        "Menghitung numerologi nama...", 
-        "Menyelaraskan energi...", 
-        "Menyusun blueprint jiwa..."
+    // Simulasi proses analisis yang rumit
+    const loadingSteps = [
+        "Mengakses Arsip Akasik...",
+        "Mengkalkulasi Vektor Nasib...",
+        "Menganalisis Pola Bawah Sadar...",
+        "Menyusun Laporan Jiwa..."
     ];
+    
     let step = 0;
     const interval = setInterval(() => {
-        document.getElementById('loading-text').innerText = loadingTexts[step % loadingTexts.length];
-        step++;
+        if(step < loadingSteps.length) {
+            document.getElementById('loading-text').innerText = loadingSteps[step];
+            step++;
+        }
     }, 800);
 
-    // Proses Kalkulasi (Simulasi "Mikir" 3 detik)
     setTimeout(() => {
         clearInterval(interval);
-        generateAnalysis(name, dateInput, timeInput, bloodType);
-    }, 3000);
+        generateReport(name, dateInput, timeInput);
+    }, 4000); // 4 detik agar terasa "berat" prosesnya
 }
 
-function generateAnalysis(name, date, time, blood) {
-    // 2. LOGIKA PEMILIHAN PARAGRAF (ALGORITMA)
-    
-    // A. Hitung Life Path (Untuk Paragraf 1)
+function generateReport(name, date, time) {
+    // 1. LOGIKA LIFE PATH (1-9)
     let digits = date.replace(/-/g, '');
     let sumDate = 0;
     for (let char of digits) sumDate += parseInt(char);
-    // Reduksi ke 1-9
     while (sumDate > 9) {
         let temp = 0;
         for (let c of sumDate.toString()) temp += parseInt(c);
         sumDate = temp;
     }
-    // Index array dimulai dari 0, jadi kurangi 1. (Jika hasil 9, ambil index 8)
-    // Jika hasil 0 (error handling), default ke 0.
-    let indexCore = (sumDate === 0) ? 0 : sumDate - 1;
+    const idxCore = (sumDate === 0) ? 0 : sumDate - 1;
 
-
-    // B. Hitung Jam Lahir (Untuk Paragraf 2)
+    // 2. LOGIKA WAKTU (3 Kategori)
     const hour = parseInt(time.split(':')[0]);
-    let indexSub = 0;
-    if (hour >= 0 && hour < 9) indexSub = 0; // Pagi
-    else if (hour >= 9 && hour < 17) indexSub = 1; // Siang
-    else indexSub = 2; // Malam
+    let idxTime = 0;
+    if (hour >= 8 && hour < 16) idxTime = 1; // Siang
+    else if (hour >= 16) idxTime = 2; // Malam
 
-
-    // C. Hitung Hash Nama + Gol Darah (Untuk Paragraf 3)
+    // 3. LOGIKA NAMA (5 Kategori)
     let nameSum = 0;
-    for (let i = 0; i < name.length; i++) {
-        nameSum += name.charCodeAt(i);
-    }
-    // Tambah variasi dari Gol Darah
-    if (blood === 'A') nameSum += 10;
-    if (blood === 'B') nameSum += 20;
-    if (blood === 'AB') nameSum += 30;
-    if (blood === 'O') nameSum += 40;
-    
-    // Modulo dengan jumlah opsi karir (ada 5 opsi)
-    let indexCareer = nameSum % 5;
+    for (let i = 0; i < name.length; i++) nameSum += name.charCodeAt(i);
+    const idxStrat = nameSum % 5;
+    const idxClose = nameSum % 4;
 
-
-    // D. Pesan Semesta (Untuk Paragraf 4)
-    // Kombinasi Tanggal + Jam agar random tapi tetap sama untuk orang yang sama
-    let uniqueSeed = sumDate + hour + nameSum;
-    let indexAdvice = uniqueSeed % 5; // Modulo jumlah opsi advice
-
-
-    // 3. TAMPILKAN HASIL
+    // RENDER HASIL
     document.getElementById('loading').classList.add('hidden');
     document.getElementById('result').classList.remove('hidden');
+
+    // Header Personal
+    document.getElementById('report-for').innerText = "LAPORAN UNTUK: " + name.toUpperCase();
     
-    document.getElementById('result-name').innerText = name.toUpperCase();
+    // Inject HTML Content
+    document.getElementById('content-core').innerHTML = naskah.core[idxCore];
+    document.getElementById('content-sub').innerHTML = naskah.timePath[idxTime];
+    document.getElementById('content-strat').innerHTML = naskah.strategy[idxStrat];
     
-    // Masukkan teks ke elemen paragraf
-    document.getElementById('paragraf-1').innerText = naskah.core[indexCore];
-    document.getElementById('paragraf-2').innerText = naskah.subconscious[indexSub];
-    document.getElementById('paragraf-3').innerText = naskah.career[indexCareer];
-    document.getElementById('paragraf-4').innerText = naskah.advice[indexAdvice];
+    // Bagian Nasehat Akhir
+    document.getElementById('content-close').innerText = naskah.closing[idxClose];
+    
+    // Auto scroll ke atas
+    window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
 function reset() {
     document.getElementById('result').classList.add('hidden');
     document.getElementById('input-section').classList.remove('hidden');
-    document.getElementById('name').value = '';
 }
