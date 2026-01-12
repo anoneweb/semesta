@@ -1,113 +1,86 @@
 :root {
     --bg-color: #050511;
-    --card-bg: rgba(255, 255, 255, 0.05);
+    --card-bg: #10101a;
     --gold: #d4af37;
-    --text-main: #ffffff;
-    --text-muted: #a0a0b0;
-    --purple-glow: rgba(139, 92, 246, 0.5);
+    --text-main: #e2e8f0;
+    --text-muted: #94a3b8;
 }
 
 body {
     font-family: 'Quicksand', sans-serif;
     background: radial-gradient(circle at center, #1a1a2e 0%, #000000 100%);
     color: var(--text-main);
-    margin: 0;
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    margin: 0; min-height: 100vh;
+    display: flex; justify-content: center; align-items: center;
 }
 
 .container {
-    width: 90%;
-    max-width: 500px;
+    width: 90%; max-width: 600px; /* Lebih lebar untuk teks panjang */
     padding: 20px;
+    margin: 20px 0;
 }
 
-/* Header & Typography */
 header { text-align: center; margin-bottom: 30px; }
-.logo {
-    font-family: 'Playfair Display', serif;
-    font-size: 2rem;
-    color: var(--gold);
-    text-shadow: 0 0 10px var(--purple-glow);
-}
-.subtitle { color: var(--text-muted); font-size: 0.9rem; margin: 0; }
+.logo { font-family: 'Playfair Display', serif; font-size: 2rem; color: var(--gold); letter-spacing: 2px; }
+.subtitle { color: var(--text-muted); font-size: 0.9rem; letter-spacing: 1px; }
 
-/* Form */
-.form-group { margin-bottom: 20px; text-align: left; }
-label { display: block; margin-bottom: 8px; color: var(--gold); }
-input {
-    width: 100%; padding: 15px;
-    background: var(--card-bg); border: 1px solid #333;
-    border-radius: 12px; color: white;
-    font-size: 1rem; box-sizing: border-box;
+/* Input Styles */
+.grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; }
+.form-group { margin-bottom: 15px; text-align: left; }
+label { display: block; margin-bottom: 8px; font-size: 0.85rem; color: var(--gold); }
+input, select {
+    width: 100%; padding: 14px;
+    background: rgba(255,255,255,0.07); border: 1px solid #333;
+    border-radius: 8px; color: white; outline: none; box-sizing: border-box;
 }
 
-/* Button */
 .btn-main {
-    width: 100%; padding: 15px;
-    background: linear-gradient(45deg, #d4af37, #f6e27a);
-    color: #1a0b2e; font-weight: bold;
-    border: none; border-radius: 50px;
-    font-size: 1rem; cursor: pointer;
-    box-shadow: 0 5px 20px rgba(212, 175, 55, 0.3);
+    width: 100%; padding: 15px; margin-top: 10px;
+    background: linear-gradient(90deg, #d4af37, #f6e27a);
+    color: #000; font-weight: bold; border: none; border-radius: 8px;
+    cursor: pointer; letter-spacing: 1px;
 }
 .btn-outline {
-    width: 100%; padding: 12px; margin-top: 20px;
-    background: transparent; border: 1px solid var(--text-muted);
-    color: var(--text-muted); border-radius: 50px; cursor: pointer;
+    width: 100%; padding: 15px; margin-top: 30px;
+    background: transparent; border: 1px solid #555;
+    color: #ccc; border-radius: 8px; cursor: pointer;
 }
 
-/* Hasil / Result */
+/* Essay Result Styles */
 .hidden { display: none; }
-.fade-in { animation: fadeIn 1s ease; }
+.fade-in { animation: fadeIn 1.5s ease; }
 
-.main-card {
-    background: var(--card-bg); padding: 20px;
-    border-radius: 20px; text-align: center;
-    border: 1px solid rgba(255,255,255,0.1);
-    margin-bottom: 15px;
+.essay-container {
+    background: var(--card-bg);
+    padding: 30px;
+    border-radius: 12px;
+    border-left: 4px solid var(--gold);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    text-align: left; /* Teks rata kiri agar enak dibaca */
 }
-.number-circle {
-    width: 50px; height: 50px; line-height: 50px;
-    background: var(--gold); color: #000;
+
+.chapter-title {
     font-family: 'Playfair Display', serif;
-    font-size: 1.5rem; font-weight: bold;
-    border-radius: 50%; margin: 0 auto 10px;
+    color: var(--gold);
+    margin-top: 25px; margin-bottom: 10px;
+    font-size: 1.2rem; border-bottom: 1px solid rgba(212,175,55,0.2);
+    padding-bottom: 5px;
+}
+.chapter-title:first-child { margin-top: 0; }
+
+.long-text {
+    line-height: 1.8; /* Spasi antar baris renggang biar enak dibaca */
+    font-size: 0.95rem;
+    color: #cbd5e1;
+    margin-bottom: 15px;
+    text-align: justify;
 }
 
-/* Grid Layout 4 Kotak */
-.grid-insight {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 10px;
-}
-.insight-card {
-    background: rgba(0,0,0,0.3);
-    padding: 15px; border-radius: 15px;
-    font-size: 0.85rem;
-}
-.insight-card h4 { color: var(--gold); margin: 5px 0; font-size: 0.9rem; }
-.icon { font-size: 1.5rem; margin-bottom: 5px; }
-
-/* Lucky Charm Card (Kotak Panjang) */
-.lucky-card {
-    background: linear-gradient(45deg, rgba(212, 175, 55, 0.1), rgba(0,0,0,0.3));
-    padding: 15px; border-radius: 15px;
-    border: 1px solid rgba(212, 175, 55, 0.3);
-    margin-top: 10px; text-align: center;
-}
-
-/* Loading */
 .spinner {
     width: 40px; height: 40px; margin: 0 auto 15px;
-    border: 4px solid rgba(255,255,255,0.1);
-    border-left-color: var(--gold);
-    border-radius: 50%;
-    animation: spin 1s linear infinite;
+    border: 3px solid rgba(255,255,255,0.1); border-top-color: var(--gold);
+    border-radius: 50%; animation: spin 1s linear infinite;
 }
 
 @keyframes spin { 100% { transform: rotate(360deg); } }
 @keyframes fadeIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
-@media (max-width: 400px) { .grid-insight { grid-template-columns: 1fr; } }
